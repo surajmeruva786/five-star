@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIVE STAR Restaurant - Murali Nagar Branch</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Import Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <div class="logo-icon">
+          <i class="fa-solid fa-burger"></i>
+        </div>
+        <div>
+          <h1 class="logo-text">FIVE STAR</h1>
+          <p class="logo-subtext">Murali Nagar, Visakhapatnam</p>
+        </div>
+      </div>
+      
+      <div class="desktop-menu">
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="tel:9578857777" class="phone-button">
+          <i class="fa-solid fa-phone"></i> 957 885 7777
+        </a>
+      </div>
+      
+      <div class="mobile-menu-button">
+        <i class="fa-solid fa-bars" id="menu-open"></i>
+        <i class="fa-solid fa-xmark" id="menu-close"></i>
+      </div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu-container" id="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="#menu" class="mobile-nav-link">
+          <i class="fa-solid fa-pizza-slice"></i> Menu
+        </a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="tel:9578857777" class="mobile-phone-button">
+          <i class="fa-solid fa-phone"></i> 957 885 7777
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <div class="hero-icons">
+        <div class="hero-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+        <div class="hero-icon"><i class="fa-solid fa-burger"></i></div>
+        <div class="hero-icon"><i class="fa-solid fa-utensils"></i></div>
+      </div>
+      
+      <h2 class="hero-title">
+        TASTY FOOD <span class="highlight">FUN TIMES!</span>
+      </h2>
+      
+      <p class="hero-text">
+        Burgers, Rolls & Snacks that'll make your taste buds dance with joy!
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#menu" class="primary-button">
+          <i class="fa-solid fa-utensils"></i> Explore Menu
+        </a>
+        <a href="#special-deals" class="secondary-button">
+          Special Deals <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+      
+      <div class="scroll-indicator">
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Items Section -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="divider-with-icon">
+          <div class="divider"></div>
+          <i class="fa-solid fa-star"></i>
+          <div class="divider"></div>
+        </div>
+        
+        <h3 class="section-title">TODAY'S SPECIALS</h3>
+        
+        <p class="section-subtitle">
+          Try our most popular and mouth-watering dishes that'll make you come back for more!
+        </p>
+      </div>
+      
+      <div class="featured-items-grid" id="featured-items">
+        <!-- Menu items will be loaded here via JavaScript -->
+        <div class="skeleton-loading">
+          <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-content">
+              <div class="skeleton-title"></div>
+              <div class="skeleton-text"></div>
+              <div class="skeleton-footer"></div>
+            </div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-content">
+              <div class="skeleton-title"></div>
+              <div class="skeleton-text"></div>
+              <div class="skeleton-footer"></div>
+            </div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-image"></div>
+            <div class="skeleton-content">
+              <div class="skeleton-title"></div>
+              <div class="skeleton-text"></div>
+              <div class="skeleton-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-all-button">
+        <a href="#menu" class="primary-button">
+          <i class="fa-solid fa-fire"></i> See All Menu Items
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="menu-header">
+        <div class="menu-title-container">
+          <h2 class="menu-title">OUR TASTY MENU</h2>
+          <div class="menu-divider"></div>
+        </div>
+        
+        <div class="menu-search">
+          <div class="search-input">
+            <input type="text" id="search-input" placeholder="Looking for something yummy?">
+            <i class="fa-solid fa-search"></i>
+          </div>
+          
+          <button class="filter-button">
+            <i class="fa-solid fa-filter"></i> 
+            <span>Filter</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Category Tabs -->
+      <div class="category-tabs" id="category-tabs">
+        <!-- Category buttons will be loaded here via JavaScript -->
+      </div>
+      
+      <!-- Menu Items -->
+      <div class="menu-items" id="menu-items">
+        <!-- Menu items will be loaded here via JavaScript -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-header">
+        <div class="about-icon-container">
+          <div class="about-icon">
+            <i class="fa-solid fa-pizza-slice"></i>
+          </div>
+        </div>
+        <h2 class="about-title">Our Food Story</h2>
+        <p class="about-subtitle">
+          At FIVE STAR, we're all about bringing fun, flavor, and fantastic junk food to Visakhapatnam!
+        </p>
+      </div>
+      
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon">
+            <i class="fa-solid fa-drumstick-bite"></i>
+          </div>
+          <h3 class="about-card-title">Juicy Ingredients</h3>
+          <p class="about-card-text">
+            We pack our burgers, rolls and snacks with the most delicious 
+            ingredients so every bite is packed with flavor!
+          </p>
+        </div>
+        
+        <div class="about-card">
+          <div class="about-card-icon">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3 class="about-card-title">Award-Winning Taste</h3>
+          <p class="about-card-text">
+            Our special recipes have fans coming back for more! 
+            We've perfected the art of making irresistible fast food.
+          </p>
+        </div>
+        
+        <div class="about-card">
+          <div class="about-card-icon">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <h3 class="about-card-title">Happy Food Vibes</h3>
+          <p class="about-card-text">
+            We believe great food creates great moments! That's why 
+            we make every meal a celebration of flavors and fun.
+          </p>
+        </div>
+      </div>
+      
+      <div class="about-footer">
+        <div class="about-badge">
+          <i class="fa-solid fa-drumstick-bite"></i>
+          <span>Serving Happiness Since 2010</span>
+          <i class="fa-solid fa-drumstick-bite"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="contact-title">Get in Touch</h2>
+      
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 class="contact-card-title">Location</h3>
+          <p class="contact-text">Murali Nagar, Near Beach Road, Visakhapatnam, Andhra Pradesh</p>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="contact-card-title">Hours</h3>
+          <p class="contact-text">Open Daily<br>10:00 AM - 10:00 PM</p>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <h3 class="contact-card-title">Call Us</h3>
+          <p class="contact-text">
+            <a href="tel:9578857777">957 885 7777</a><br>
+            <a href="tel:9578857778">957 885 7778</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-pattern"></div>
+    
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <i class="fa-solid fa-pizza-slice"></i>
+          </div>
+          <div>
+            <h3 class="footer-logo-text">FIVE STAR</h3>
+            <div class="footer-tagline">TASTY FOOD, FUN TIMES!</div>
+          </div>
+        </div>
+        
+        <div class="footer-social">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="tel:9578857777" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-info">
+        <div class="footer-info-card">
+          <h4 class="footer-info-title">Hours</h4>
+          <p class="footer-info-text">Open daily: 10:00 AM - 10:00 PM</p>
+        </div>
+        
+        <div class="footer-info-card">
+          <h4 class="footer-info-title">Location</h4>
+          <p class="footer-info-text">Murali Nagar, Visakhapatnam</p>
+        </div>
+        
+        <div class="footer-info-card">
+          <h4 class="footer-info-title">Contact</h4>
+          <p class="footer-info-text">957-885-7777</p>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; <span id="current-year"></span> FIVE STAR. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
